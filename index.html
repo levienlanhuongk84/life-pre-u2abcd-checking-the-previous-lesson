@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Competitions · Check the previous lesson · Unit 2a–2d</title>
-<meta name="description" content="Review test on Life Pre-Intermediate Unit 2a–2d (Crazy competitions, Winning and losing, Bolivian wrestlers, Joining a group): vocabulary, word forms, verbs for rules, the -ing form, like, interests and plans. 50 questions, 30 minutes, explanations after you submit.">
+<meta name="description" content="Review test on Life Pre-Intermediate Unit 2a–2d (Crazy competitions, Winning and losing, Bolivian wrestlers, Joining a group): vocabulary, word forms, verbs for rules, the -ing form, like, interests and plans. 50 questions, 25 minutes, explanations after you submit.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400&family=Roboto+Condensed:wght@500;700&family=Roboto+Mono:wght@500;700&display=swap">
 <style>
@@ -250,7 +250,7 @@
   <div class="lh-slot">
     <div class="lh-eyebrow">Competitions · Life Pre-Intermediate · Unit 2a–2d</div>
     <h1 class="lh-title">Check the previous lesson · Unit 2a⁠–⁠2d</h1>
-    <div class="lh-chips"><span id="m-count">50 questions</span><span id="m-time">30 minutes</span><span>1 point each</span><span>Results after you submit</span></div>
+    <div class="lh-chips"><span id="m-count">50 questions</span><span id="m-time">25 minutes</span><span>1 point each</span><span>Results after you submit</span></div>
   </div>
 </header>
 
@@ -287,7 +287,7 @@
 
     <div id="quiz" hidden>
       <div class="testbar">
-        <div class="time" id="timer">30:00</div>
+        <div class="time" id="timer">25:00</div>
         <div class="prog"><div class="lbl"><span id="who"></span><span><b id="answered">0</b> / <span id="total">50</span> answered</span></div><div class="track"><div class="fill" id="prog-fill"></div></div></div>
         <button class="btn sm" id="btn-submit-top">Submit</button>
       </div>
@@ -418,7 +418,7 @@
   var K = 'life-pre-u2abcd-checking-the-previous-lesson:state';
   function again() {
     var old = {}; try { old = JSON.parse(localStorage.getItem(K)) || {}; } catch (e) {}
-    var st = { status: 'idle', name: old.name || '', sid: old.sid || '', startedAt: 0, duration: old.duration || 30,
+    var st = { status: 'idle', name: old.name || '', sid: old.sid || '', startedAt: 0, duration: old.duration || 25,
       answers: {}, order: {}, result: null, clientId: Math.random().toString(16).slice(2, 14), pending: old.pending || null };
     try { localStorage.setItem(K, JSON.stringify(st)); } catch (e) {}
     location.reload();
@@ -434,7 +434,7 @@
 const CONFIG = {
   API_URL: 'https://script.google.com/macros/s/AKfycbzkKxqWOPBPIXipj3iODk7g9asscRgPzO3Ayv-W8zJbbsH80A6XGrpMEvFDgbw-seOJEA/exec',                  // để rỗng lúc build — điền URL Apps Script (…/exec) SAU KHI deploy xong
   LOCAL_USERS: [],               // luôn để rỗng — tài khoản chỉ sống trong Code.gs, không bao giờ trong trang này
-  DURATION_MIN: 30,              // phút làm bài
+  DURATION_MIN: 25,              // phút làm bài
   PASS_MARK: 5.0,                // ngưỡng "đạt" trên dashboard (thang 10)
   KEY: 'life-pre-u2abcd-checking-the-previous-lesson'                 // namespace localStorage — PHẢI duy nhất cho bài này (dùng luôn làm slug CSV)
 };
