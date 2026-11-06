@@ -1285,7 +1285,7 @@ $('#btn-start').addEventListener('click', async () => {
   btn.textContent = btnText; btn.disabled = false;
   if (!SET.open) { applySettings(); return; }
   S = Object.assign(S, { status: 'running', name, sid, startedAt: Date.now(), duration: SET.duration, answers: {}, order: {}, result: null });
-  save(); renderQuiz(); startTimer(); window.scrollTo({ top: 0 });
+  save(); renderQuiz(); startTimer(); window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
 });
 
 /* ====================== RENDER TEST ====================== */
